@@ -17,7 +17,7 @@ public class StatisticService {
         return sum / sales.length;
     }
 
-    public int TheNumberOfTheMonthWithTheMaximumSales(int[] sales) {
+    public int theNumberOfTheMonthWithTheMaximumSales(int[] sales) {
         int max = sales[0];
         for (int sale : sales) {
             if (max < sale) {
@@ -26,20 +26,20 @@ public class StatisticService {
 
         }
         int MonthNumber = 0;
-        int TheNumberOfTheMonthWithTheMaximumSales = 0;
+        int theNumberOfTheMonthWithTheMaximumSales = 0;
         for (int sale : sales) {
             MonthNumber = MonthNumber + 1;
 
             if (sale == max) {
-                TheNumberOfTheMonthWithTheMaximumSales = MonthNumber;
+                theNumberOfTheMonthWithTheMaximumSales = MonthNumber;
 
 
             }
         }
-        return TheNumberOfTheMonthWithTheMaximumSales;
+        return theNumberOfTheMonthWithTheMaximumSales;
     }
 
-    public int TheNumberOfTheMonthWithTheMinimumSales(int[] sales) {
+    public int theNumberOfTheMonthWithTheMinimumSales(int[] sales) {
         int min = sales[0];
         for (int sale : sales) {
             if (sale < min) {
@@ -48,21 +48,21 @@ public class StatisticService {
 
         }
         int MonthNumber = 0;
-        int TheNumberOfTheMonthWithTheMinimumSales = 0;
+        int theNumberOfTheMonthWithTheMinimumSales = 0;
         for (int sale : sales) {
             MonthNumber = MonthNumber + 1;
 
             if (sale == min) {
-                TheNumberOfTheMonthWithTheMinimumSales = MonthNumber;
+                theNumberOfTheMonthWithTheMinimumSales = MonthNumber;
 
 
             }
         }
 
-        return TheNumberOfTheMonthWithTheMinimumSales;
+        return theNumberOfTheMonthWithTheMinimumSales;
     }
 
-    public int TheQuantityMonthwhenSalesAreBelowAverage(int[] sales) {
+    public int theQuantityMonthwhenSalesAreBelowAverage(int[] sales) {
         int Avg = Avg(sales);
         int quantityMonth = 0;
         for (int sale : sales) {
@@ -74,7 +74,7 @@ public class StatisticService {
         return quantityMonth;
     }
 
-    public int TheQuantityMonthwhenSalesArelessAverage(int[] sales) {
+    public int theQuantityMonthwhenSalesArelessAverage(int[] sales) {
         int Avg = Avg(sales);
         int quantityMonth = 0;
         for (int sale : sales) {

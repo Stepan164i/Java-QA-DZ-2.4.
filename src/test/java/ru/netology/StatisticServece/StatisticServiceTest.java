@@ -33,7 +33,7 @@ class StatisticServiceTest {
 
         ru.netology.StatisticService.StatisticService statisticService = new ru.netology.StatisticService.StatisticService();
         int expected = 8;
-        int actual = statisticService.TheNumberOfTheMonthWithTheMaximumSales(sales);
+        int actual = statisticService.theNumberOfTheMonthWithTheMaximumSales(sales);
 
         assertEquals(expected, actual);
     }
@@ -44,7 +44,7 @@ class StatisticServiceTest {
 
         ru.netology.StatisticService.StatisticService statisticService = new ru.netology.StatisticService.StatisticService();
         int expected = 9;
-        int actual = statisticService.TheNumberOfTheMonthWithTheMinimumSales(sales);
+        int actual = statisticService.theNumberOfTheMonthWithTheMinimumSales(sales);
 
         assertEquals(expected, actual);
 
@@ -55,7 +55,7 @@ class StatisticServiceTest {
 
         ru.netology.StatisticService.StatisticService statisticService = new ru.netology.StatisticService.StatisticService();
         int expected = 5;
-        int actual = statisticService.TheQuantityMonthwhenSalesAreBelowAverage(sales);
+        int actual = statisticService.theQuantityMonthwhenSalesAreBelowAverage(sales);
 
         assertEquals(expected, actual);
 
@@ -66,7 +66,7 @@ class StatisticServiceTest {
 
         ru.netology.StatisticService.StatisticService statisticService = new ru.netology.StatisticService.StatisticService();
         int expected = 5;
-        int actual = statisticService.TheQuantityMonthwhenSalesArelessAverage(sales);
+        int actual = statisticService.theQuantityMonthwhenSalesArelessAverage(sales);
 
         assertEquals(expected, actual);
 
