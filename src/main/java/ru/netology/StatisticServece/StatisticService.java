@@ -12,7 +12,7 @@ public class StatisticService {
 
     }
 
-    public int Avg(int[] sales) {
+    public int avg(int[] sales) {
         int sum = sum(sales);
         return sum / sales.length;
     }
@@ -25,13 +25,13 @@ public class StatisticService {
             }
 
         }
-        int MonthNumber = 0;
+        int monthNumber = 0;
         int theNumberOfTheMonthWithTheMaximumSales = 0;
         for (int sale : sales) {
-            MonthNumber = MonthNumber + 1;
+            monthNumber = monthNumber + 1;
 
             if (sale == max) {
-                theNumberOfTheMonthWithTheMaximumSales = MonthNumber;
+                theNumberOfTheMonthWithTheMaximumSales = monthNumber;
 
 
             }
@@ -47,13 +47,13 @@ public class StatisticService {
             }
 
         }
-        int MonthNumber = 0;
+        int monthNumber = 0;
         int theNumberOfTheMonthWithTheMinimumSales = 0;
         for (int sale : sales) {
-            MonthNumber = MonthNumber + 1;
+            monthNumber = monthNumber + 1;
 
             if (sale == min) {
-                theNumberOfTheMonthWithTheMinimumSales = MonthNumber;
+                theNumberOfTheMonthWithTheMinimumSales = monthNumber;
 
 
             }
@@ -63,10 +63,10 @@ public class StatisticService {
     }
 
     public int theQuantityMonthwhenSalesAreBelowAverage(int[] sales) {
-        int Avg = Avg(sales);
+        int avg = avg(sales);
         int quantityMonth = 0;
         for (int sale : sales) {
-            if (sale < Avg) {
+            if (sale < avg) {
                 quantityMonth = quantityMonth + 1;
 
             }
@@ -75,10 +75,10 @@ public class StatisticService {
     }
 
     public int theQuantityMonthwhenSalesArelessAverage(int[] sales) {
-        int Avg = Avg(sales);
+        int avg = avg(sales);
         int quantityMonth = 0;
         for (int sale : sales) {
-            if (sale > Avg) {
+            if (sale > avg) {
                 quantityMonth = quantityMonth + 1;
 
             }

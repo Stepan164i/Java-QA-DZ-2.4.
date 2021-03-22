@@ -22,7 +22,7 @@ class StatisticServiceTest {
 
         ru.netology.StatisticService.StatisticService statisticService = new ru.netology.StatisticService.StatisticService();
         int expected = 15;
-        int actual = statisticService.Avg(sales);
+        int actual = statisticService.avg(sales);
 
         assertEquals(expected, actual);
     }
